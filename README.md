@@ -1,5 +1,5 @@
 # Random Zen Koans Generator 
-    **receive a new, random, zen koan phrase every time!**
+    - script to generate random Zen Koan phrase.
 
-### Operation
-    *use the randomZenPhrase(); function to receive a random zen koan phrase*
+## Operation
+    -use the randomZenPhrase(); function to receive a random zen koan phrase
