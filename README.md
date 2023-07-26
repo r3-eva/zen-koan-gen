@@ -1,3 +1,5 @@
 # Random Zen Koans Generator 
-    **Run program to receive a new, random Zen Koans phrase or riddle
+    **receive a new, random, zen koan phrase every time!**
 
+### Operation
+    *use the randomZenPhrase(); function to receive a random zen koan phrase*
