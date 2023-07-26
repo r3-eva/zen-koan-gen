@@ -7,18 +7,27 @@ const zenLast = ['Qigang Nakayama', 'Hirokumi Kojima', 'Iwao Murata', 'Masashi S
 // returns random zenFirst phrase
 const returnZenFirst = () => {
     return zenFirst[Math.floor(Math.random() *9)];
-    console.log(returnZenFirst);
+    // console.log(returnZenFirst);
 };
-
+// returns random zenMiddle phrase
 const returnZenMiddle = () => {
     return zenMiddle[Math.floor(Math.random() *9)];
-    console.log(returnZenMiddle);
+    // console.log(returnZenMiddle);
 };
-
+//returns random zenLast phrase
 const returnZenLast = () => {
     return zenLast[Math.floor(Math.random() *9)];
-    console.log(returnZenLast);
+    // console.log(returnZenLast);
 };
 
-
-
+// return random phrase including zenFirst, zenMiddle, zenLast: with proper formatting.
+function randomZenPhrase() {
+    for (let i = 0; i < zenFirst.length; i++) {
+        const firstLetter = zenFirst[i].charAt(0).toUpperCase();
+        const rest = zenFirst[i].slice(1).toLowerCase();
+        zenFirst[i] = firstLetter + rest;
+    }
+    //const capitalized = zenFirst.charAt(0).toUppercase() + zenFirst.slice(1);
+    return `"${returnZenFirst()}, ${returnZenMiddle()}!" -${returnZenLast()}`;
+    console.log(randomZenPhrase);
+};
